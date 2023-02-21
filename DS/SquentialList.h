@@ -12,10 +12,11 @@ typedef struct {
 //init Squential List 
 Status InitSqList(SqList& L) {
 	L.elem = new ElemType[MAXSIZE];
-	if (!L.elem) return OVERFLOW;
+	if (!L.elem) return OVERFLOW; //判断是否开辟内存成功
 	L.length = 0;
 	return OK;
 }
+
 //get element from SqList
 Status GetElem(SqList L, int i, ElemType& e) {
 	//判断下标是否合理
