@@ -1,0 +1,5 @@
+﻿  start.cpp
+C:\Users\skywalkerch\source\repos\DS\DS\SquentialList.h(40,14): warning C4018: '>': signed/unsigned mismatch
+C:\Users\skywalkerch\source\repos\DS\DS\SquentialList.h(41,31): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\skywalkerch\source\repos\DS\DS\SquentialList.h(53,14): warning C4018: '>': signed/unsigned mismatch
+  DS.vcxproj -> C:\Users\skywalkerch\source\repos\DS\x64\Debug\DS.exe
