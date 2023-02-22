@@ -29,6 +29,9 @@
     <ClInclude Include="macro.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LinkList.h">
+      <Filter>Header Files\LinearList</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">

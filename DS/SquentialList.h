@@ -2,9 +2,10 @@
 #pragma once
 #include "macro.h"
 #include<stdio.h>
+typedef int ElemType;
 
 #define MAXSIZE 100
-typedef struct {
+typedef struct SqList{
 	ElemType* elem;
 	int length;
 }SqList;

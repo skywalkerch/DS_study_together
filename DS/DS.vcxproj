@@ -130,6 +130,7 @@
     <ClCompile Include="start.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LinkList.h" />
     <ClInclude Include="macro.h" />
     <ClInclude Include="SquentialList.h" />
   </ItemGroup>

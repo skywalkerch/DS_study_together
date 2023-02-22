@@ -1,5 +1,4 @@
 ﻿  start.cpp
-C:\Users\skywalkerch\source\repos\DS\DS\SquentialList.h(40,14): warning C4018: '>': signed/unsigned mismatch
-C:\Users\skywalkerch\source\repos\DS\DS\SquentialList.h(41,31): warning C4018: '>=': signed/unsigned mismatch
-C:\Users\skywalkerch\source\repos\DS\DS\SquentialList.h(52,14): warning C4018: '>': signed/unsigned mismatch
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math.h(971,1): warning C4005: 'OVERFLOW': macro redefinition
+C:\Users\skywalkerch\source\repos\DS\DS\macro.h(4,1): message : see previous definition of 'OVERFLOW'
   DS.vcxproj -> C:\Users\skywalkerch\source\repos\DS\x64\Debug\DS.exe
