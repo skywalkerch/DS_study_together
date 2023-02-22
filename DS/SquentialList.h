@@ -1,7 +1,7 @@
+//Squential List 
 #pragma once
 #include "macro.h"
 #include<stdio.h>
-//Squential List 
 
 #define MAXSIZE 100
 typedef struct {
@@ -12,7 +12,7 @@ typedef struct {
 //init Squential List 
 Status InitSqList(SqList& L) {
 	L.elem = new ElemType[MAXSIZE];
-	if (!L.elem) return OVERFLOW; //判断是否开辟内存成功
+	if (!L.elem) { return OVERFLOW; } //判断是否开辟内存成功
 	L.length = 0;
 	return OK;
 }
@@ -20,7 +20,7 @@ Status InitSqList(SqList& L) {
 //get element from SqList
 Status GetElem(SqList L, int i, ElemType& e) {
 	//判断下标是否合理
-	if (i < 0 || i >= L.length) return ERROR;
+	if (i < 0 || i >= L.length) { return ERROR; }
 	e = L.elem[i - 1];
 	return OK;
 }
@@ -36,7 +36,6 @@ int LocateElem(SqList L, ElemType e) {
 
 //insert element to Sqlist
 //在第i个位置插入元素,下标为i-1
-
 Status ListInsert(SqList& L, unsigned int i, ElemType e) {
 	if (i<1 || i>L.length + 1 || (i == MAXSIZE)) { return ERROR; }
 	for (int j = L.length - 1; j >= i-1; j--) {
@@ -49,7 +48,6 @@ Status ListInsert(SqList& L, unsigned int i, ElemType e) {
 
 //delete element to Sqlist
 //在第i个位置删除元素,下标为i-1
-
 Status ListDelete(SqList& L, unsigned int i) {
 	if (i<1 || i>L.length) { return ERROR; }
 	for (int j = i - 1; j < L.length; j++) {
@@ -59,7 +57,7 @@ Status ListDelete(SqList& L, unsigned int i) {
 	return OK;
 }
 
-void PrintList(SqList L) {
+void PrintSqList(SqList L) {
 	for (int i = 0; i < L.length; i++) {
 		printf("%d-->%d\n", i, L.elem[i]);
 	}
@@ -80,22 +78,22 @@ void TestSqList() {
 	printf("测试值为%d\n", e);
 	//测试查找
 	printf("查找到%d是第%d个元素\n", e, LocateElem(L, e));
-
+	printf("\n");
 	printf("测试插入\n");
 	printf("插入前\n");
-	PrintList(L);
+	PrintSqList(L);
 	//测试插入
 	//在表的第4个位置插入7
 	ListInsert(L, 4, 7);
 	printf("插入后\n");
-	PrintList(L);
+	PrintSqList(L);
 	printf("\n");
 	//测试删除
 	//在表的第3个位置删除元素
 	printf("测试删除\n");
 	printf("删除前\n");
-	PrintList(L);
+	PrintSqList(L);
 	ListDelete(L, 3);
 	printf("删除后\n");
-	PrintList(L);
+	PrintSqList(L);
 }
