@@ -167,7 +167,7 @@ void TestLinkList() {
 	CreateList_T(L, 6);
 	//单链表的取值操作测试
 	ElemType e;
-	ElemType n=3;
+	ElemType n = 3;
 	if (GetElem(L, n, e)) {
 		if (e == n) {
 			std::cout << "取值函数测试通过\n" << std::endl;
