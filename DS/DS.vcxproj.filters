@@ -16,6 +16,12 @@
     <Filter Include="Header Files\LinearList">
       <UniqueIdentifier>{a2e67d9b-97db-4d8f-a311-bdbdda972ba6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Stack">
+      <UniqueIdentifier>{9e2e7c1e-8328-4b96-8817-90d82087aae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Queue">
+      <UniqueIdentifier>{48b123b6-921f-428e-88b8-60d9447dda78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="start.cpp">
@@ -31,6 +37,12 @@
     </ClInclude>
     <ClInclude Include="LinkList.h">
       <Filter>Header Files\LinearList</Filter>
+    </ClInclude>
+    <ClInclude Include="SqStack.h">
+      <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="ListStack.h">
+      <Filter>Header Files\Stack</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

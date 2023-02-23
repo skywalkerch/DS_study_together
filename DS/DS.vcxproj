@@ -131,7 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkList.h" />
+    <ClInclude Include="ListStack.h" />
     <ClInclude Include="macro.h" />
+    <ClInclude Include="SqStack.h" />
     <ClInclude Include="SquentialList.h" />
   </ItemGroup>
   <ItemGroup>
