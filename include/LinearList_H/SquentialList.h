@@ -1,6 +1,6 @@
 // Squential List
 #pragma once
-#include "macro.h"
+#include "../macro.h"
 #include <stdio.h>
 typedef int ElemType;
 

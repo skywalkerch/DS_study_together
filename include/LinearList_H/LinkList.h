@@ -1,5 +1,5 @@
 // 链表代码
-#include "macro.h"
+#include "../macro.h"
 #include <iostream>
 #pragma once
 typedef int ElemType;

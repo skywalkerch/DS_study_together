@@ -1,4 +1,2 @@
-/x64
-*.opendb
-*.db-shm
-*.db-wal
+/build
+/bin
