@@ -79,6 +79,7 @@ void LinkQueueTest() {
     DeQueue(Q, e);
     DeQueue(Q, e);
     DeQueue(Q, e);
+    DeQueue(Q, e);
     GetHead(Q, e);
     printf("队头元素%d\n", e);
 }

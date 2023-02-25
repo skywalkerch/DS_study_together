@@ -10,11 +10,15 @@ set(HEADERS
         include/LinearList_H/SquentialList.h
         include/Stack_H/LinkStack.h
         include/Stack_H/SqStack.h
-        include/macro.h include/Queue_H/SqQueue.h include/Queue_H/LinkQueue.h)
+        include/macro.h
+        include/Queue_H/SqQueue.h
+        include/Queue_H/LinkQueue.h
+        include/SString_H/SString.h)
 include_directories(
         include
         include/LinearList_H
         include/Queue_H
         include/Stack_H
+        include/SString_H
 )
 add_executable(DS ${MAIN} ${HEADERS})
