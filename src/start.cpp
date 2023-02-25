@@ -1,6 +1,7 @@
 #include "LinkList.h"
-int main()
-{
-	system("chcp 65001");
-	TestLinkList();
+#include "macro.h"
+
+int main() {
+    SetEncoding();
+    TestLinkList();
 }
