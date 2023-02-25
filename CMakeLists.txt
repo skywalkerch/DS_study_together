@@ -10,7 +10,7 @@ set(HEADERS
         include/LinearList_H/SquentialList.h
         include/Stack_H/LinkStack.h
         include/Stack_H/SqStack.h
-        include/macro.h)
+        include/macro.h include/Queue_H/SqQueue.h)
 include_directories(
         include
         include/LinearList_H
