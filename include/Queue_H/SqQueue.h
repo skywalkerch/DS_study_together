@@ -2,7 +2,7 @@
 // Created by skywalkerch on 2023/2/25.
 //
 #include "macro.h"
-#include<stdio.h>
+#include <stdio.h>
 //顺序队的实现
 #define MAXSIZE 50
 typedef int ElemType;
@@ -19,13 +19,13 @@ typedef struct {
 Status InitQueue(SqQueue &Q) {
     Q.data = new ElemType[MAXSIZE];
     Q.front = Q.rear = 0;
+    return OK;
 };
 
 Status QueueEmpty(SqQueue &Q) {
     if (Q.front == Q.rear) { return TRUE; }
-    else {
-        return FALSE;
-    }
+    return FALSE;
+
 };
 
 Status EnQueue(SqQueue &Q, ElemType e) {

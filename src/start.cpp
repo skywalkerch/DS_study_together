@@ -1,7 +1,7 @@
-#include "LinkStack.h"
+#include "SqQueue.h"
 #include "macro.h"
 
 int main() {
     SetEncoding();
-    LinkStackTest();
+    SqQueueTest();
 }
