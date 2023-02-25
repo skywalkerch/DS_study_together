@@ -1,7 +1,7 @@
-#include "LinkList.h"
+#include "LinkStack.h"
 #include "macro.h"
 
 int main() {
     SetEncoding();
-    TestLinkList();
+    LinkStackTest();
 }

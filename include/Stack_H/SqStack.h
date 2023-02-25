@@ -40,7 +40,7 @@ Status Push(SqStack &S, ElemType e) {
 //弹栈
 Status Pop(SqStack &S, ElemType &e) {
     //判断栈是否哦为空
-    if (S.top == -1) {
+    if (StackEmpty(S)) {
         printf("栈为空");
         return ERROR;
     }
@@ -50,7 +50,7 @@ Status Pop(SqStack &S, ElemType &e) {
 
 //读栈顶元素
 Status GetTop(SqStack S, ElemType &e) {
-    if (S.top == -1) {
+    if (StackEmpty(S)) {
         printf("栈为空");
         return ERROR;
     }

@@ -8,7 +8,7 @@ set(LIBRARY_OUTPUT_PATH build)
 set(HEADERS
         include/LinearList_H/LinkList.h
         include/LinearList_H/SquentialList.h
-        include/Stack_H/ListStack.h
+        include/Stack_H/LinkStack.h
         include/Stack_H/SqStack.h
         include/macro.h)
 include_directories(
