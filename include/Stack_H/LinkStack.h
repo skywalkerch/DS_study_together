@@ -1,7 +1,7 @@
 #pragma once
 
 #include"macro.h"
-#include <stdio.h>
+#include <cstdio>
 
 typedef int ElemType;
 typedef struct LinkNode {

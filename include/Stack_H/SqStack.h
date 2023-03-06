@@ -1,7 +1,7 @@
 #pragma once
 
 #include "macro.h"
-#include <stdio.h>
+#include <cstdio>
 //顺序栈的实现
 #define MAXSIZE 50
 typedef int ElemType;

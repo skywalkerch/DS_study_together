@@ -13,7 +13,7 @@ set(HEADERS
         include/macro.h
         include/Queue_H/SqQueue.h
         include/Queue_H/LinkQueue.h
-        include/SString_H/SString.h)
+        include/SString_H/SString.h include/Tree_H/SqBinaryTree.h include/Tree_H/LinkBinaryTree.h)
 include_directories(
         include
         include/LinearList_H

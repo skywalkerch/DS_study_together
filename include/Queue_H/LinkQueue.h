@@ -2,7 +2,7 @@
 // Created by skywalkerch on 2023/2/25.
 //
 #include "macro.h"
-#include <stdio.h>
+#include <cstdio>
 
 typedef int ElemType;
 typedef struct LinkNode {

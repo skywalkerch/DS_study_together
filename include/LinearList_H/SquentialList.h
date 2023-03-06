@@ -1,7 +1,7 @@
 // Squential List
 #pragma once
 #include "../macro.h"
-#include <stdio.h>
+#include <cstdio>
 typedef int ElemType;
 
 #define MAXSIZE 100

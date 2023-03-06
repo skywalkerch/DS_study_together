@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 //串的定长顺序存储结构
 #define MAXSIZE 255
 typedef struct {
