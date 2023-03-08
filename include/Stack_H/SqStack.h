@@ -1,6 +1,6 @@
 #pragma once
 
-#include "macro.h"
+#include "../macro.h"
 #include <cstdio>
 //顺序栈的实现
 #define MAXSIZE 50

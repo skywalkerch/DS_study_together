@@ -1,6 +1,6 @@
 #pragma once
 
-#include"macro.h"
+#include"../macro.h"
 #include <cstdio>
 
 typedef int ElemType;

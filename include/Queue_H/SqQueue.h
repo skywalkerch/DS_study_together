@@ -1,7 +1,7 @@
 //
 // Created by skywalkerch on 2023/2/25.
 //
-#include "macro.h"
+#include "../macro.h"
 #include <cstdio>
 //顺序队的实现
 #define MAXSIZE 50

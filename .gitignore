@@ -2,3 +2,6 @@
 /bin
 /.vs
 /out
+/.idea
+/cmake-build-debug-visual-studio
+/out
