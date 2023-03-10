@@ -52,7 +52,6 @@ vector<int> S_PreOrder(BiTree T){
         curNode=curNode->lchild;
         }else{
         curNode=S.top()->rchild;
-        result.push_back(curNode->data);
         S.pop();
         }
 }
