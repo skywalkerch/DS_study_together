@@ -4,7 +4,8 @@
 
 #ifndef DS_LINKBINARYTREE_H
 #define DS_LINKBINARYTREE_H
-
+#include<stack>
+#include<vector>
 #include "macro.h"
 #include <cstdio>
 
@@ -39,6 +40,23 @@ void PreOrder(BiTree T) {
         PreOrder(T->rchild);
     }
 }
+//
+vector<int> S_PreOrder(BiTree T){
+    stack<BiTNode*> S;
+    vector<int> result;
+    BiTNode* curNode;
+    while(!(!curNode&&S.empty()){
+        if (curNode){
+        S.push(curNode);
+        result.push_back(curNode->data);
+        curNode=curNode->lchild;
+        }else{
+        curNode=S.top()->rchild;
+        result.push_back(curNode->data);
+        S.pop();
+        }
+}
+
 
 //二叉树的中序遍历
 void InOrder(BiTree T) {
