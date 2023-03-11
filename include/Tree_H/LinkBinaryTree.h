@@ -40,11 +40,11 @@ void PreOrder(BiTree T) {
         PreOrder(T->rchild);
     }
 }
-//
+// preOrder only use stack
 vector<int> S_PreOrder(BiTree T){
     stack<BiTNode*> S;
     vector<int> result;
-    BiTNode* curNode;
+    BiTNode* curNode=T;
     while(!(!curNode&&S.empty()){
         if (curNode){
         S.push(curNode);
@@ -55,7 +55,8 @@ vector<int> S_PreOrder(BiTree T){
         S.pop();
         }
 }
-
+    return result;
+}
 
 //二叉树的中序遍历
 void InOrder(BiTree T) {
@@ -66,6 +67,27 @@ void InOrder(BiTree T) {
     }
 }
 
+// InOrder only use stack
+vector<int> S_InOrder(BiTree T){
+    vector<int> result;
+    BiTNode* curNode=T;
+    stack<BiTNode*>;
+    while(!(!curNode&&S.empty())){
+        if(curNode){
+            S.push(curNode);
+            curNode=curNode->lchild;
+        }else{
+            curNode=S.top->rchild;
+            result.push_back(S.top->data);
+            S.pop();
+        }
+    }
+    return result;
+}
+
+
+
+
 //二叉树的后序遍历
 void PostOrder(BiTree T) {
     if (T) {
@@ -73,6 +95,31 @@ void PostOrder(BiTree T) {
         PostOrder(T->rchild);
         visit(T);
     }
+}
+
+//PostOrder only use stack
+//
+vector<int> S_PostOrder(BiTree T)
+{
+vector<int> result;
+stack<int> temp;
+BiTNode *curNode=T;
+stack<BiTNode*> S;
+while(!(!curNode&&S.empty())){
+    if(curNode){
+        S.push(curNode);
+        temp.push(curNode->data);
+        curNode=curNode->rchild; 
+    }else{
+    curNode=S.top->lchild;
+    S.pop();
+    }
+}
+while(!temp.empty()){
+    result.push_back(temp.top);
+    temp.pop();
+}
+return result;
 }
 
 #endif //DS_LINKBINARYTREE_H
