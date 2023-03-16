@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 int main() {
-	printf("我就是个摸鱼的主函数");
-	return OK;
+  int a = 1;
+  int b = 4;
+  printf("%d", a + b);
+  return OK;
 }
-

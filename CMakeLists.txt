@@ -4,8 +4,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 set(LIBRARY_OUTPUT_PATH "${CMAKE_CURRENT_SOURCE_DIR}/build")
-
-
+SET(CMAKE_BUILD_TYPE "Debug")
 include(FetchContent)
 FetchContent_Declare(
    googletest
