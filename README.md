@@ -4,4 +4,4 @@
 
 - 一个人一分支
 - main分支不允许修改
-- 如果想参与进来，请联系chenghan-skywalker@outlook.com,我会邀请你进入该项目
+- 如果想参与进来，请联系skywalkerch@outlook.com,我会邀请你进入该项目
