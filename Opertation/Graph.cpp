@@ -38,29 +38,3 @@ typedef struct ALGraph
     int vexnum,arcnum;
 }ALGraph;
 
-//十字链表弧节点
-typedef struct XArcNode
-{
-    /* data */
-    int tailvex, headvex;
-    struct XArcNode *hlink, *tlink;
-    InfoType info;
-}XArcNode;
-
-//十字链表顶点节点
-typedef struct XVNode
-{
-    /* data */
-    VexType data;
-    XArcNode *firstin;
-    XArcNode *firstout;
-}XVNode,XList[MaxVertexNum];
-
-//十字链表
-typedef struct XGraph
-{
-    /* data */
-    XList vertices;
-    int vexnum,arcnum;
-}XGraph;
-

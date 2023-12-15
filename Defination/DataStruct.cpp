@@ -1,0 +1,102 @@
+#define MaxSize 50
+typedef struct SqList{
+    int data[MaxSize];
+    int Length;
+}SqList;
+
+typedef struct SqStack{
+    int data[MaxSize];
+    int top;
+}SqStack;
+
+typedef struct SqQueue{
+    int data[MaxSize];
+    int *front, *rear;
+}SqQueue;
+
+typedef struct LNODE{
+    int data;
+    LNODE * next;
+}LNODE, *LinkList;
+
+typedef struct LinkStack{
+    int data;
+    LinkStack *next;
+}*LinkStack;
+
+typedef struct LinkQueue{
+    int data;
+    LinkQueue *next, *front;
+} *LinkQueue;
+
+typedef struct BiTreeNODE{
+    int data;
+    BiTreeNODE *lchild, *rchild;
+}BiTreeNODE, *LinkBiTree;
+
+#define MaxVertexNum 100
+
+typedef char VexType;
+typedef char InfoType;
+typedef int EdgeType;
+
+//邻接矩阵
+typedef struct MGraph
+{
+    /* data */
+    VexType Vex[MaxVertexNum];
+    EdgeType Edge[MaxVertexNum][MaxVertexNum];
+    int vexnum, arcnum;
+}MGraph;
+
+//弧节点
+typedef struct ArcNode
+{
+    /* data */
+    int adjvex;
+    struct ArcNode *Next;
+    InfoType info;
+}ArcNode;
+
+//顶点节点
+typedef struct VNode
+{
+    /* data */
+    VexType data;
+    ArcNode *first;
+}VNode,AdjList[MaxVertexNum];
+
+//邻接表
+typedef struct ALGraph
+{
+    /* data */
+    AdjList vertices;
+    int vexnum,arcnum;
+}ALGraph;
+
+//十字链表弧节点
+typedef struct XArcNode
+{
+    /* data */
+    int tailvex, headvex;
+    struct XArcNode *hlink, *tlink;
+    InfoType info;
+}XArcNode;
+
+//十字链表顶点节点
+typedef struct XVNode
+{
+    /* data */
+    VexType data;
+    XArcNode *firstin;
+    XArcNode *firstout;
+}XVNode,XList[MaxVertexNum];
+
+//十字链表
+typedef struct XGraph
+{
+    /* data */
+    XList vertices;
+    int vexnum,arcnum;
+}XGraph;
+
