@@ -1,3 +1,15 @@
+#define MaxSize 50
+
+typedef struct SqStack{
+    int data[MaxSize];
+    int top;
+}SqStack;
+
+typedef struct SqQueue{
+    int data[MaxSize];
+    int *front, *rear;
+}SqQueue;
+
 #define MaxVertexNum 100
 
 typedef char VexType;
@@ -38,3 +50,8 @@ typedef struct ALGraph
     int vexnum,arcnum;
 }ALGraph;
 
+int BFS(ALGraph &G);
+
+int DFS(ALGraph &G);
+
+int Order(ALGraph &G);
