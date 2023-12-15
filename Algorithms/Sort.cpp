@@ -24,7 +24,7 @@ int BubbleSort(SqList &L,SqList &L_Sort){
 }
 
 int InsertSort(SqList &L){
-    int j = 0;//已排序的队列长度
+    int j = 0;
     for(int i = 1;i < L.length; i++){
         int min = 0,max = j,mid = (min+max)/2;;
         while(min <= max){

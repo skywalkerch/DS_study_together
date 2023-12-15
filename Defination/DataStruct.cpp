@@ -29,10 +29,10 @@ typedef struct LinkQueue{
     LinkQueue *next, *front;
 } *LinkQueue;
 
-typedef struct BiTreeNODE{
+typedef struct BiTNODE{
     int data;
-    BiTreeNODE *lchild, *rchild;
-}BiTreeNODE, *LinkBiTree;
+    BiTNODE *lchild, *rchild;
+}BiTNODE, *BiTree;
 
 #define MaxVertexNum 100
 

@@ -60,11 +60,9 @@ int BiSearch(SqList &L,int &e,int &low,int &high,int &mid){
 }
 
 int BlockSearch(SqList &Index,SqList &Index_value,SqList &S_L,int &e){
-    //Index 记录块索引，Index_value 记录块最大值
     int low,high,mid;
-    //二分查找大于e的最小值
     BiSearch(Index_value,e,low,high,mid);
-    //块内查找e
+    //Search e in block
     if(LineSearch(S_L,e,Index.data[mid],Index_value.data[++mid],mid) == 0)
         return mid;
     else
@@ -83,6 +81,7 @@ Tree BSTSearch(Tree T,int &e,Tree ){
         else
             return T;
     }
+    return false;
 }
 
 Tree BSTCreate();
